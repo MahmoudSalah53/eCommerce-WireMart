@@ -62,13 +62,3 @@ npm install && npm run dev
 # 8. Start the local development server
 php artisan serve
 
----
-
-## 🧪 Test PayPal Account
-
-To test the payment functionality, use the following PayPal **Sandbox** credentials:
-
-- **Email:** `sb-9yflv42128533@personal.example.com`  
-- **Password:** `7z{?F(&t`
-
-⚠️ *This is a sandbox (test) account — no real payments will be processed.*
