@@ -53,7 +53,7 @@ cp .env.example .env
 # 5. Generate the application key
 php artisan key:generate
 
-# 6. Run database migrations and seed default data
+# 6. Run database migrations
 php artisan migrate
 
 # 7. Install frontend dependencies and compile assets
