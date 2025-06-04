@@ -39,10 +39,10 @@ To run this project locally, follow these steps:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/wiremart.git
+git clone https://github.com/MahmoudSalah53/eCommerce-WireMart.git
 
 # 2. Navigate into the project directory
-cd wiremart
+cd eCommerce-WireMart
 
 # 3. Install PHP dependencies
 composer install
