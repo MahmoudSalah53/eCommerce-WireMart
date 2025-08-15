@@ -67,6 +67,13 @@ php artisan serve
 
 ## 🧪 Test PayPal Account
 
+.env:
+```bash
+PAYPAL_MODE=sandbox
+PAYPAL_SANDBOX_CLIENT_ID=AWCwjxtosn82MLsMKuLh13FQtaB0YTyKsxUJT-1IsgUJg4EY1mG24E567Q66SO1H78XtpxJznimb9Lnl
+PAYPAL_SANDBOX_SECRET=ELZLDgrfR4DoDswip9H3vE_eAsz5hM8yvpqcj0yGcK2VWZMPWAndpehR2ey2Bp1KdSultkNBqn1tnUFy
+```
+
 To test the payment functionality, use the following PayPal **Sandbox** credentials:
 
 - **Email:** `sb-9yflv42128533@personal.example.com`  
