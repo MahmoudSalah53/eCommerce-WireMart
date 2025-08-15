@@ -45,7 +45,7 @@ git clone https://github.com/MahmoudSalah53/eCommerce-WireMart.git
 cd eCommerce-WireMart
 
 # 3. Install PHP dependencies
-composer install
+composer install --prefer-dist
 
 # 4. Create a copy of the environment file
 cp .env.example .env
