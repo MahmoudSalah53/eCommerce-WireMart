@@ -4,9 +4,11 @@
 It supports three user roles — **Admin**, **Seller**, and **Customer** — each with its own dashboard and permissions.
 
 <p align="center">
-  <img src="public/admin_asset/img/photos/photo1.png" alt="Banner1" style="width:45%; height:220px; object-fit:cover; margin-right:10px;">
-  <img src="public/admin_asset/img/photos/photo2.png" alt="Banner2" style="width:45%; height:220px; object-fit:cover; margin-left:10px;">
+  <img src="public/admin_asset/img/photos/photo1.png" alt="Banner1" style="width:45%; height:220px; object-fit:cover;">
+  <span style="margin:0 20px;"></span>
+  <img src="public/admin_asset/img/photos/photo2.png" alt="Banner2" style="width:45%; height:220px; object-fit:cover;">
 </p>
+
 
 ---
 
