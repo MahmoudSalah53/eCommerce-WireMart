@@ -5,6 +5,7 @@ It supports three user roles — **Admin**, **Seller**, and **Customer** — eac
 
 <p align="center">
   <img src="public/admin_asset/img/photos/photo1.png" alt="Banner1" style="width:45%; height:220px; object-fit:cover;">
+    ||
   <img src="public/admin_asset/img/photos/photo2.png" alt="Banner2" style="width:45%; height:220px; object-fit:cover;">
 </p>
 
