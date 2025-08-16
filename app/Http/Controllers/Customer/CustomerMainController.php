@@ -12,6 +12,12 @@ use Illuminate\Support\Facades\Hash;
 class CustomerMainController extends Controller
 {
 
+    public function index()
+    {
+        return view('customer.profile');
+    }
+
+
     public function updateProfile(Request $request, $id)
     {
         $user = User::findOrFail($id);
@@ -54,7 +60,7 @@ class CustomerMainController extends Controller
         ]);
 
         // Check if current password matches
-        if(!Hash::check($request->current_password, $user->password)){
+        if (!Hash::check($request->current_password, $user->password)) {
             return back()->withErrors(['current_password' => 'Current password is incorrect.']);
         }
 
@@ -78,11 +84,13 @@ class CustomerMainController extends Controller
         return view('customer.profile');
     }
 
-    public function history(){
+    public function history()
+    {
         return view('customer.history');
     }
 
-    public function payment(){
+    public function payment()
+    {
         return view('customer.payment');
     }
 }

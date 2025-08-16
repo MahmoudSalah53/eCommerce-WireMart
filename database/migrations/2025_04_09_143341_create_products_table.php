@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('sku')->unique();
             $table->foreignId('seller_id')->constrained('users')->onDelete('cascade');
             $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
-            $table->foreignId('subcategory_id')->constrained('subcategories')->onDelete('cascade');
+            $table->foreignId('subcategory_id')->nullable()->constrained('subcategories')->onDelete('cascade');
             $table->foreignId('store_id')->constrained('stores')->onDelete('cascade');
             $table->decimal('regular_price', 8, 2);
             $table->decimal('discounted_price', 8, 2)->nullable();

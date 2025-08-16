@@ -11,19 +11,22 @@ use Illuminate\Support\Facades\Auth;
 
 class SellerProductController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $authuserid = Auth::id();
         $stores = Store::where('user_id', $authuserid)->get();
         return view('seller.product.create', compact('stores'));
     }
 
-    public function manage(){
+    public function manage()
+    {
         $currentSeller = Auth::id();
         $products = Product::where('seller_id', $currentSeller)->get();
         return view('seller.product.manage', compact('products'));
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
         $request->validate([
             'product_name' => 'required|string|max:255',
             'description' => 'nullable|string',
@@ -32,15 +35,26 @@ class SellerProductController extends Controller
             'subcategory_id' => 'nullable|exists:subcategories,id',
             'store_id' => 'required|exists:stores,id',
             'regular_price' => 'required|numeric|min:0',
-            'discounted_price' => 'nullable|numeric|min:0',
+            'discounted_price' => [
+                'nullable',
+                'numeric',
+                'min:0',
+                function ($attribute, $value, $fail) use ($request) {
+                    if ($value !== null && $value >= $request->regular_price) {
+                        $fail('Discounted price must be less than the regular price.');
+                    }
+                },
+            ],
             'tax_rate' => 'required|numeric|min:0|max:100',
             'stock_quantity' => 'required|integer|min:0',
             'images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5000',
             'slug' => 'required|string|unique:products,slug'
         ]);
 
-        
-       $product = Product::create([
+
+
+
+        $product = Product::create([
             'product_name' => $request->product_name,
             'description' => $request->description,
             'sku' => $request->sku,
@@ -57,8 +71,8 @@ class SellerProductController extends Controller
             'meta_description' => $request->meta_description,
         ]);
 
-        if($request->hasFile('images')){
-            foreach ($request->file('images') as $file){
+        if ($request->hasFile('images')) {
+            foreach ($request->file('images') as $file) {
                 $path = $file->store('product_images', 'public');
                 ProductImage::create([
                     'product_id' => $product->id,
@@ -71,11 +85,12 @@ class SellerProductController extends Controller
         return redirect('vendor/product/manage')->with('success', 'Product Addes Successfully!');
     }
 
-    public function edit($id){
+    public function edit($id)
+    {
         $product = Product::findorfail($id);
 
         // Make sure the product belongs to the current seller
-        if($product->seller_id != Auth::id()){
+        if ($product->seller_id != Auth::id()) {
             abort(403);
         }
 
@@ -104,7 +119,7 @@ class SellerProductController extends Controller
             'tax_rate' => 'required|numeric|min:0|max:100',
             'stock_quantity' => 'required|integer|min:0',
             'images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5000',
-            'slug' => 'required|string|unique:products,slug,'.$id,
+            'slug' => 'required|string|unique:products,slug,' . $id,
         ]);
 
         $product->update([
@@ -123,7 +138,7 @@ class SellerProductController extends Controller
             'meta_description' => $request->meta_description,
         ]);
 
-        
+
         if ($request->hasFile('images')) {
 
             ProductImage::where('product_id', $product->id)->delete();
@@ -143,7 +158,8 @@ class SellerProductController extends Controller
 
     }
 
-    public function destroy(Product $id){
+    public function destroy(Product $id)
+    {
 
         $id->delete();
 
