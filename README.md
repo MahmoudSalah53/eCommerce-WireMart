@@ -87,7 +87,6 @@ foreach ($param as $k => $v) {
     }
 }
 
-
 ```
 with this fixed version:
 
@@ -104,7 +103,6 @@ foreach ($param as $k => $v) {
         $ret[$k] = $v;
     }
 }
-
 
 ```
 
