@@ -67,7 +67,10 @@ php artisan migrate
 # 7. Install frontend dependencies and compile assets
 npm install && npm run dev
 
-# 8. Start the local development server
+# 8. Create the storage symlink
+php artisan storage:link
+
+# 9. Start the local development server
 php artisan serve
 ```
 
@@ -117,6 +120,12 @@ foreach ($param as $k => $v) {
 ---
 
 ## 🧪 Test PayPal Account
+
+```env
+PAYPAL_MODE=sandbox
+PAYPAL_SANDBOX_CLIENT_ID=AWCwjxtosn82MLsMKuLh13FQtaB0YTyKsxUJT-1IsgUJg4EY1mG24E567Q66SO1H78XtpxJznimb9Lnl
+PAYPAL_SANDBOX_SECRET=ELZLDgrfR4DoDswip9H3vE_eAsz5hM8yvpqcj0yGcK2VWZMPWAndpehR2ey2Bp1KdSultkNBqn1tnUFy
+```
 
 To test the payment functionality, use the following PayPal **Sandbox** credentials:
 
