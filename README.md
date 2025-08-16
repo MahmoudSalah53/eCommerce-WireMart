@@ -36,11 +36,12 @@ It supports three user roles — **Admin**, **Seller**, and **Customer** — eac
   <img src="https://img.shields.io/badge/Laravel-12-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
   <img src="https://img.shields.io/badge/Livewire-3.0-4E56A6?style=for-the-badge&logo=livewire&logoColor=white" />
   <img src="https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
-  <img src="https://img.shields.io/badge/Blade-Templates-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Laravel%20Breeze-Auth-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Blade-Templates-FB923C?style=for-the-badge&logo=laravel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Laravel%20Breeze-Auth-0EA5E9?style=for-the-badge&logo=laravel&logoColor=white" />
   <img src="https://img.shields.io/badge/PayPal-Sandbox-00457C?style=for-the-badge&logo=paypal&logoColor=white" />
-  <img src="https://img.shields.io/badge/Multilingual-Ar%2C%20En%2C%20Fr-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Multilingual-AR%20|%20EN%20|%20FR-22C55E?style=for-the-badge&logo=google-translate&logoColor=white" />
 </p>
+
 
 ---
 
