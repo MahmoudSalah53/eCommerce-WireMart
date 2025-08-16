@@ -33,30 +33,14 @@ It supports three user roles — **Admin**, **Seller**, and **Customer** — eac
 ## 🧰 Tech Stack
 
 <p align="center">
- <img src="https://img.shields.io/badge/Laravel-12-FF2D20?style=flat&logo=laravel&logoColor=white" />
-    <img src="https://img.shields.io/badge/Livewire-3-4E56A6?style=flat&logo=laravel&logoColor=white" />
-    <img src="https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat&logo=bootstrap&logoColor=white" />
-    <img src="https://img.shields.io/badge/PHP-8.2-777BB4?style=flat&logo=php&logoColor=white" />
-    <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=flat&logo=mysql&logoColor=white" />
-    <img src="https://img.shields.io/badge/NPM-Registry-CB3837?style=flat&logo=npm&logoColor=white" />
-    <img src="https://img.shields.io/badge/PayPal-Sandbox-00457C?style=flat&logo=paypal&logoColor=white" />
-    <img src="https://img.shields.io/badge/GitHub-Repo-181717?style=flat&logo=github&logoColor=white" />
-</p>
-
-<p align="center">
-<img src="https://img.shields.io/badge/Laravel-12-FF2D20?style=plastic&logo=laravel&logoColor=white" />
-<img src="https://img.shields.io/badge/Livewire-3-4E56A6?style=plastic&logo=laravel&logoColor=white" />
-<img src="https://img.shields.io/badge/Bootstrap-5-7952B3?style=plastic&logo=bootstrap&logoColor=white" />
-<img src="https://img.shields.io/badge/PHP-8.2-777BB4?style=plastic&logo=php&logoColor=white" />
-<img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=plastic&logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/Vite-Bundler-646CFF?style=plastic&logo=vite&logoColor=white" />
-<img src="https://img.shields.io/badge/Node.js-18-339933?style=plastic&logo=node.js&logoColor=white" />
-<img src="https://img.shields.io/badge/NPM-Registry-CB3837?style=plastic&logo=npm&logoColor=white" />
-<img src="https://img.shields.io/badge/Redis-Cache-DC382D?style=plastic&logo=redis&logoColor=white" />
-<img src="https://img.shields.io/badge/Stripe-Payments-008CDD?style=plastic&logo=stripe&logoColor=white" />
-<img src="https://img.shields.io/badge/PayPal-Sandbox-00457C?style=plastic&logo=paypal&logoColor=white" />
-<img src="https://img.shields.io/badge/GitHub-Repo-181717?style=plastic&logo=github&logoColor=white" />
-
+    <img src="https://img.shields.io/badge/Laravel-12-FF2D20?style=plastic&logo=laravel&logoColor=white" />
+    <img src="https://img.shields.io/badge/Livewire-3-4E56A6?style=plastic&logo=laravel&logoColor=white" />
+    <img src="https://img.shields.io/badge/Bootstrap-5-7952B3?style=plastic&logo=bootstrap&logoColor=white" />
+    <img src="https://img.shields.io/badge/PHP-8.2-777BB4?style=plastic&logo=php&logoColor=white" />
+    <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=plastic&logo=mysql&logoColor=white" />
+    <img src="https://img.shields.io/badge/NPM-Registry-CB3837?style=plastic&logo=npm&logoColor=white" />
+    <img src="https://img.shields.io/badge/PayPal-Sandbox-00457C?style=plastic&logo=paypal&logoColor=white" />
+    <img src="https://img.shields.io/badge/GitHub-Repo-181717?style=plastic&logo=github&logoColor=white" />
 </p>
 
 ---
