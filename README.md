@@ -65,8 +65,6 @@ php artisan serve
 
 ---
 
-## Fix for sizeof(): Argument #1 ($value) must be of type Countable|array, string given in PHP 8.3
-
 ### If you are using the deprecated PayPal PHP REST SDK, you may encounter this error in:
 ```bash
 vendor/paypal/rest-api-sdk-php/lib/PayPal/Common/PayPalModel.php
