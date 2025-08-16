@@ -73,6 +73,49 @@ php artisan serve
 
 ---
 
+### If you are using the deprecated PayPal PHP REST SDK, you may encounter this error in:
+```bash
+vendor/paypal/rest-api-sdk-php/lib/PayPal/Common/PayPalModel.php
+```
+(around line 176).
+
+Replace this code:
+
+```bash
+
+foreach ($param as $k => $v) {
+    if ($v instanceof PayPalModel) {
+        $ret[$k] = $v->toArray();
+    } else if (sizeof($v) <= 0 && is_array($v)) {
+        $ret[$k] = array();
+    } else if (is_array($v)) {
+        $ret[$k] = $this->_convertToArray($v);
+    } else {
+        $ret[$k] = $v;
+    }
+}
+
+```
+with this fixed version:
+
+```bash
+
+foreach ($param as $k => $v) {
+    if ($v instanceof PayPalModel) {
+        $ret[$k] = $v->toArray();
+    } else if (is_array($v) && sizeof($v) <= 0) {
+        $ret[$k] = array();
+    } else if (is_array($v)) {
+        $ret[$k] = $this->_convertToArray($v);
+    } else {
+        $ret[$k] = $v;
+    }
+}
+
+```
+
+---
+
 ## 🧪 Test PayPal Account
 
 To test the payment functionality, use the following PayPal **Sandbox** credentials:
